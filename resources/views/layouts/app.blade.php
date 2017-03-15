@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>FlarePoint</title>
+    <title>PCMS</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
@@ -56,8 +56,10 @@
         </div>
     </div>
 </nav>
-<div style="text-align: center; margin-bottom:20px;"><img src="{{ asset('images/FP_logo_big.png') }}" width="400px"
-                                                          alt=""></div>
+<div style="text-align: center; margin-bottom:20px;">
+  <!--<img src="{{ asset('images/FP_logo_big.png') }}" width="400px" alt="">-->
+  <img src="{{ asset('images/Sri_Lanka_Army_Logo.png') }}" width="250px" alt="">
+</div>
 @yield('content')
 
         <!-- JavaScripts -->

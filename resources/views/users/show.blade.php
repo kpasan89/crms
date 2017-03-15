@@ -66,7 +66,7 @@
 <doughnut :statistics="{{$lead_statistics}}"></doughnut>
   </div>
 
-   @stop 
+   @stop
 @push('scripts')
         <script>
         $('#pagination a').on('click', function (e) {
@@ -101,7 +101,7 @@
                     } else {
                          table.columns(4).search( '' ).draw();
                     }
-              });  
+              });
 
           });
             $(function () {
@@ -143,9 +143,7 @@
                     } else {
                          table.columns(4).search( '' ).draw();
                     }
-              });  
+              });
           });
         </script>
 @endpush
-
-
