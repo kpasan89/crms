@@ -20,7 +20,11 @@
 
 <div id="wrapper">
     <div class="navbar navbar-default navbar-top">
+      <a href="{{ url('/logout') }}" class="navbar navbar-default list-group-item impmenu pull-right" data-parent="#MainMenu"><i
+                  class="glyphicon glyphicon-log-out"></i> @lang('menu.signout') </a>
         <!--NOTIFICATIONS START-->
+        <!--
+        Notification Area with ball..... Commented
         <div class="dropdown">
             <a id="dLabel" role="button" data-toggle="dropdown"  href="/page.html">
                 <i class="glyphicon glyphicon-bell"><span id="notifycount"></span></i>
@@ -85,7 +89,7 @@
                 </div>
 
             </ul>
-        </div>
+        </div>-->
         <!--NOTIFICATIONS END-->
         <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu">
             <span class="icon-bar"></span>
@@ -98,7 +102,7 @@
     <!-- /#sidebar-wrapper -->
     <!-- Sidebar menu -->
 
-    <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" role="navigation">
+  <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" role="navigation">
         <div class="list-group panel">
             <p class=" list-group-item" title="">
               <!--<img src="{{url('images/flarepoint_logo.png')}}" alt="">-->
@@ -111,24 +115,24 @@
 
 
             <a href="#clients" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
-                        class="glyphicon glyphicon-tag"></i> @lang('menu.clients.title') </a>
+                        class="glyphicon glyphicon-tag"></i> Customers </a>
             <div class="collapse" id="clients">
 
-                <a href="{{ route('clients.index')}}" class="list-group-item childlist">@lang('menu.clients.all')</a>
+                <a href="{{ route('clients.index')}}" class="list-group-item childlist">All Customers</a>
                 @if(Entrust::can('client-create'))
                     <a href="{{ route('clients.create')}}"
-                       class="list-group-item childlist">@lang('menu.clients.new')</a>
+                       class="list-group-item childlist">New Customer Registration</a>
                 @endif
             </div>
 
-            <a href="#tasks" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
+            <!--<a href="#tasks" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
                         class="glyphicon glyphicon-tasks"></i> @lang('menu.tasks.title') </a>
             <div class="collapse" id="tasks">
                 <a href="{{ route('tasks.index')}}" class="list-group-item childlist">@lang('menu.tasks.all')</a>
                 @if(Entrust::can('task-create'))
                     <a href="{{ route('tasks.create')}}" class="list-group-item childlist">@lang('menu.tasks.new')</a>
                 @endif
-            </div>
+            </div>-->
 
             <a href="#user" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
                         class="fa fa-users"></i> @lang('menu.users.title') </a>
@@ -140,7 +144,7 @@
                 @endif
             </div>
 
-            <a href="#leads" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
+            <!--<a href="#leads" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
                         class="glyphicon glyphicon-hourglass"></i> @lang('menu.leads.title')</a>
             <div class="collapse" id="leads">
                 <a href="{{ route('leads.index')}}" class="list-group-item childlist">@lang('menu.leads.all')</a>
@@ -148,17 +152,17 @@
                     <a href="{{ route('leads.create')}}"
                        class="list-group-item childlist">@lang('menu.leads.new')</a>
                 @endif
-            </div>
-            <a href="#departments" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
-                        class="fa fa-object-group"></i> @lang('menu.departments.title')</a>
+            </div>-->
+            <!--<a href="#departments" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i
+                        class="fa fa-object-group"></i> User Levels</a>
             <div class="collapse" id="departments">
                 <a href="{{ route('departments.index')}}"
-                   class="list-group-item childlist">@lang('menu.departments.all')</a>
+                   class="list-group-item childlist">All User Levels</a>
                 @if(Entrust::hasRole('administrator'))
                     <a href="{{ route('departments.create')}}"
-                       class="list-group-item childlist">@lang('menu.departments.new')</a>
+                       class="list-group-item childlist">Add User Level</a>
                 @endif
-            </div>
+            </div>-->
 
             @if(Entrust::hasRole('administrator'))
                 <a href="#settings" class=" list-group-item" data-toggle="collapse" data-parent="#MainMenu"><i

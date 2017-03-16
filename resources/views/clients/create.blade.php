@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('heading')
-    <h1>Create Client</h1>
+    <h1>Passenger Registration Form</h1>
 @stop
 
 @section('content')
@@ -28,7 +28,7 @@
             'url' => '/clients/create/cvrapi'
 
             ]) !!}
-    <div class="form-group">
+    <!-- <div class="form-group">
         <div class="input-group">
 
             {!! Form::text('vat', null, ['class' => 'form-control', 'placeholder' => 'Insert company VAT']) !!}
@@ -42,7 +42,7 @@
         </div>
         {!! Form::submit('Get client info', ['class' => 'btn btn-primary clientvat']) !!}
 
-    </div>
+    </div>-->
 
     {!!Form::close()!!}
 
