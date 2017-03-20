@@ -20,7 +20,9 @@
     </script>
 @endpush
     <div class="div">
-
+      <div class="div">
+        <h1 class="text-center">Privileged Customer Profile Management System</h1>
+      </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
             <div class="col-lg-3 col-xs-6">
@@ -134,5 +136,6 @@
             @include('partials.dashboardone')
 
 
+        </div>
         </div>
 @endsection

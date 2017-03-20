@@ -20,6 +20,7 @@
 
 <div id="wrapper">
     <div class="navbar navbar-default navbar-top">
+    
       <a href="{{ url('/logout') }}" class="navbar navbar-default list-group-item impmenu pull-right" data-parent="#MainMenu"><i
                   class="glyphicon glyphicon-log-out"></i> @lang('menu.signout') </a>
         <!--NOTIFICATIONS START-->
