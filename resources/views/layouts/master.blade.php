@@ -20,7 +20,7 @@
 
 <div id="wrapper">
     <div class="navbar navbar-default navbar-top">
-    
+
       <a href="{{ url('/logout') }}" class="navbar navbar-default list-group-item impmenu pull-right" data-parent="#MainMenu"><i
                   class="glyphicon glyphicon-log-out"></i> @lang('menu.signout') </a>
         <!--NOTIFICATIONS START-->
@@ -170,12 +170,12 @@
                             class="glyphicon glyphicon-cog"></i> @lang('menu.settings.title')</a>
                 <div class="collapse" id="settings">
                     <a href="{{ route('settings.index')}}"
-                       class="list-group-item childlist">@lang('menu.settings.overall')</a>
+                       class="list-group-item childlist">Grant Permissions</a>
 
                     <a href="{{ route('roles.index')}}"
-                       class="list-group-item childlist">@lang('menu.settings.roles')</a>
-                    <a href="{{ route('integrations.index')}}"
-                       class="list-group-item childlist">@lang('menu.settings.integrations')</a>
+                       class="list-group-item childlist">User Levels</a>
+                    <!--<a href="{{ route('integrations.index')}}"
+                       class="list-group-item childlist">@lang('menu.settings.integrations')</a>-->
                 </div>
 
 

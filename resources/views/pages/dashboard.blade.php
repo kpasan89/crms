@@ -21,7 +21,7 @@
 @endpush
     <div class="div">
       <div class="div">
-        <h1 class="text-center">Privileged Customer Profile Management System</h1>
+        <h1 class="sidebarheader text-center">Privileged Customer Profile Management System</h1>
       </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">

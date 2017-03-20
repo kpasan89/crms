@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('heading')
-    <h1>Passenger Registration Form</h1>
+    <h1 class="sidebarheader text-center">Passenger Registration Form</h1>
 @stop
 
 @section('content')

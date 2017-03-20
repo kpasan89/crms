@@ -4,7 +4,7 @@
     <div class="col-lg-12 currenttask">
 
         <table class="table table-hover">
-            <h3>@lang('role.headers.roles')</h3>
+            <h1 class="sidebarheader text-center">@lang('role.headers.roles')</h1>
             <thead>
             <thead>
             <tr>
@@ -36,7 +36,7 @@
         </table>
 
         <a href="{{ route('roles.create')}}">
-            <button class="btn btn-success">@lang('role.headers.add_new')e</button>
+            <button class="btn btn-success">@lang('role.headers.add_new')</button>
         </a>
 
     </div>
